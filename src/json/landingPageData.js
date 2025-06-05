@@ -4,12 +4,14 @@
 import Web from "../assets/images/Services/Web.png";
 import Mobile from "../assets/images/Services/Mobile.png";
 import UIUX from "../assets/images/Services/Design.png";
+import Audit from "../assets/images/Services/audit.jpeg";
+import Addon from "../assets/images/Services/addon.jpeg";
+import Support from "../assets/images/Services/support.jpeg";
 
 // Portfolio Img Imports
 import Insurance from "../assets/images/Portfolio/login.jpg";
 import Recruiting from "../assets/images/Portfolio/Recruiting.png";
 import Stream from "../assets/images/Portfolio/Stream.png";
-import Freelance from "../assets/images/Portfolio/Freelance.png";
 import Aura from "../assets/images/Portfolio/Aura.png";
 import Surtido from "../assets/images/Portfolio/Surtido.png";
 import ManagementApp from "../assets/images/Portfolio/ManagementApp.png";
@@ -30,14 +32,6 @@ import CEO from "../assets/images/TeamMembers/CEO.jpg";
 import HRD from "../assets/images/TeamMembers/HRD.jpg";
 import Finance from "../assets/images/TeamMembers/Finance.jpg";
 import ProjectManager from "../assets/images/TeamMembers/Project-manager.jpg";
-import Frontend1 from "../assets/images/TeamMembers/Frontend1.jpg";
-import Frontend2 from "../assets/images/TeamMembers/Frontend2.jpg";
-import Backend1 from "../assets/images/TeamMembers/Backend1.jpg";
-import Backend2 from "../assets/images/TeamMembers/Backend2.jpg";
-import Mobile1 from "../assets/images/TeamMembers/Mobile1.jpg";
-import Mobile2 from "../assets/images/TeamMembers/Mobile2.jpg";
-import UIUX1 from "../assets/images/TeamMembers/UIUX1.jpg";
-import UIUX2 from "../assets/images/TeamMembers/UIUX2.jpg";
 
 export const Services = [
   {
@@ -45,7 +39,7 @@ export const Services = [
     imageUrl: Web,
     animation: "left",
     description:
-      "Custom web applications and responsive websites built with modern technologies.",
+      "We build tailored custom software that aligns with your business goals and technical requirements",
   },
   {
     title: "Mobile Development",
@@ -61,23 +55,32 @@ export const Services = [
     description:
       "User-centered design solutions that enhance user experience and engagement.",
   },
-  {
-    title: "Custom Software Development",
-    imageUrl: Web,
-    animation: "left",
-    description:
-      "Tailored software solutions designed to meet your specific business needs.",
-  },
+  // {
+  //   title: "Custom Software Development",
+  //   imageUrl: Web,
+  //   animation: "left",
+  //   description:
+  //     "Tailored software solutions designed to meet your specific business needs.",
+  // },
   {
     title: "Audit & IT Consulting Services",
-    imageUrl: UIUX,
+    imageUrl: Audit,
     animation: "up",
     description:
-      "Comprehensive IT audits and strategic consulting to optimize your technology infrastructure.",
+      "From strategic advisory to deep technical audits, we help you drive value from your IT ecosystem.",
+  },
+
+  // },
+  {
+    title: "Maintenance & Add-On Services",
+    imageUrl: Addon,
+    animation: "up",
+    description:
+      "Sustained performance and adaptability through proactive support and modular enhancements.",
   },
   {
     title: "Infrastructure & System Support",
-    imageUrl: Mobile,
+    imageUrl: Support,
     animation: "right",
     description:
       "Reliable IT infrastructure management and 24/7 system support services.",
@@ -91,7 +94,7 @@ export const Portfolios = [
     imageUrl: Insurance,
     type: "Web Platform",
     status: "Under Development",
-    deliveryDate: "June 2025",
+    deliveryDate: "December 2025",
     client: "Classic Insurance Agency",
     location: "Maryland, USA",
     technologies: [
@@ -143,6 +146,43 @@ export const Portfolios = [
     title: "Recruiting App",
     imageUrl: Recruiting,
     type: "Mobile Apps",
+    status: "Completed",
+    deliveryDate: "March 2024",
+    client: "TechTalent Solutions",
+    location: "California, USA",
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Redux Toolkit",
+      "Firebase",
+      "Node.js",
+      "MongoDB",
+      "AWS S3",
+      "Jest",
+      "Git/GitHub",
+    ],
+    highlights: [
+      "Cross-platform mobile application",
+      "Real-time job matching",
+      "AI-powered candidate screening",
+      "Integrated video interviews",
+      "Advanced analytics dashboard",
+      "Secure messaging system",
+    ],
+    requirements: [
+      "Streamlined recruitment process",
+      "Candidate tracking system",
+      "Automated job matching",
+      "Video interview integration",
+      "Analytics and reporting",
+    ],
+    expectedResults: [
+      "Reduced hiring time by 40%",
+      "Improved candidate experience",
+      "Enhanced recruiter productivity",
+      "Better hiring decisions",
+      "Increased placement success rate",
+    ],
     responsibility: ["Mobile Development", "UI/UX Design"],
     credit: "",
   },
@@ -151,6 +191,43 @@ export const Portfolios = [
     title: "Stream+",
     imageUrl: Stream,
     type: "Mobile Apps",
+    status: "Completed",
+    deliveryDate: "January 2024",
+    client: "MediaStream Inc",
+    location: "New York, USA",
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Cloud Functions",
+      "AWS Media Services",
+      "FFmpeg",
+      "WebRTC",
+      "Redis",
+      "MongoDB",
+    ],
+    highlights: [
+      "High-performance streaming platform",
+      "Multi-device synchronization",
+      "Offline content access",
+      "Personalized recommendations",
+      "Social sharing features",
+      "Advanced content analytics",
+    ],
+    requirements: [
+      "Seamless video streaming",
+      "Content recommendation engine",
+      "Social features integration",
+      "Offline mode support",
+      "Analytics dashboard",
+    ],
+    expectedResults: [
+      "Increased user engagement",
+      "Reduced buffering time",
+      "Higher content retention",
+      "Improved user satisfaction",
+      "Expanded user base",
+    ],
     responsibility: ["Mobile Development", "UI/UX Design"],
     credit: "",
   },
@@ -159,6 +236,43 @@ export const Portfolios = [
     title: "Aura",
     imageUrl: Aura,
     type: "Website",
+    status: "Completed",
+    deliveryDate: "November 2023",
+    client: "Aura Wellness",
+    location: "London, UK",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "AWS",
+      "Vercel",
+    ],
+    highlights: [
+      "Modern wellness platform",
+      "Interactive booking system",
+      "Real-time availability",
+      "Secure payment processing",
+      "Automated notifications",
+      "Analytics integration",
+    ],
+    requirements: [
+      "Online booking system",
+      "Payment processing",
+      "User management",
+      "Content management",
+      "Analytics dashboard",
+    ],
+    expectedResults: [
+      "Increased online bookings",
+      "Improved user experience",
+      "Streamlined operations",
+      "Enhanced customer satisfaction",
+      "Better business insights",
+    ],
     responsibility: ["Web Development", "UI/UX Design"],
     credit: "",
   },
@@ -167,6 +281,43 @@ export const Portfolios = [
     title: "Galiow Surtido",
     imageUrl: Surtido,
     type: "Website",
+    status: "Completed",
+    deliveryDate: "September 2023",
+    client: "Surtido Retail",
+    location: "Madrid, Spain",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux",
+      "Material-UI",
+      "Stripe",
+      "AWS",
+      "Docker",
+    ],
+    highlights: [
+      "E-commerce platform",
+      "Inventory management",
+      "Order processing system",
+      "Customer loyalty program",
+      "Multi-language support",
+      "Advanced search functionality",
+    ],
+    requirements: [
+      "Online shopping experience",
+      "Inventory tracking",
+      "Payment processing",
+      "Order management",
+      "Customer support system",
+    ],
+    expectedResults: [
+      "Increased online sales",
+      "Improved inventory management",
+      "Enhanced customer loyalty",
+      "Streamlined operations",
+      "Better market reach",
+    ],
     responsibility: ["Web Development", "UI/UX Design"],
     credit: "",
   },
@@ -175,9 +326,45 @@ export const Portfolios = [
     title: "Courses Management",
     imageUrl: ManagementApp,
     type: "Website",
+    status: "Completed",
+    deliveryDate: "July 2023",
+    client: "EduTech Solutions",
+    location: "Toronto, Canada",
+    technologies: [
+      "Vue.js",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Vuex",
+      "Element UI",
+      "JWT",
+      "AWS",
+      "Docker",
+    ],
+    highlights: [
+      "Learning management system",
+      "Course creation tools",
+      "Student progress tracking",
+      "Assessment system",
+      "Discussion forums",
+      "Certificate generation",
+    ],
+    requirements: [
+      "Course management",
+      "Student tracking",
+      "Assessment tools",
+      "Progress reporting",
+      "Content delivery",
+    ],
+    expectedResults: [
+      "Improved learning outcomes",
+      "Enhanced student engagement",
+      "Streamlined course management",
+      "Better assessment tracking",
+      "Increased course completion rates",
+    ],
     responsibility: ["Web Development", "UI/UX Design"],
-    credit:
-      "",
+    credit: "",
   },
 ];
 

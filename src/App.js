@@ -1,19 +1,22 @@
+import React from "react";
+
 import { Route, Routes } from "react-router-dom";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
-import LandingPage from "pages/LandingPage";
-import ProjectPage from "pages/ProjectPage";
-import NotFoundPage from "pages/NotFoundPage";
-import TeamPage from "pages/TeamPage";
-import FAQPage from "pages/FAQPage";
+import LandingPage from "./pages/LandingPage";
+import ProjectPage from "./pages/ProjectPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import TeamPage from "./pages/TeamPage";
+import FAQPage from "./pages/FAQPage";
 
-import { ProjectDetailPage } from "pages/ProjectDetailPage";
-import { DiscussProjectPage } from "pages/DiscussProjectPage";
+import { ProjectDetailPage } from "./pages/ProjectDetailPage";
+import { DiscussProjectPage } from "./pages/DiscussProjectPage";
 
 import "./assets/css/styles.css";
 
 function App() {
   return (
-    <>
+    <DarkModeProvider>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/project" element={<ProjectPage />} />
@@ -23,7 +26,7 @@ function App() {
         <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
         <Route path="**" element={<NotFoundPage />} />
       </Routes>
-    </>
+    </DarkModeProvider>
   );
 }
 

@@ -110,7 +110,7 @@ export default function Technologies() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {technologyTabs
                 .find((tab) => tab.id === activeTab)
-                ?.technologies.map((tech, index) => (
+                ?.technologies.map((tech) => (
                   <div
                     key={tech.name}
                     className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"

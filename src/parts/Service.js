@@ -45,7 +45,7 @@ export default function Service({ data }) {
                     {item.description && (
                       <p className="text-gray-600 mb-4">{item.description}</p>
                     )}
-                    <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-200">
+                    {/* <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-700 transition-colors duration-200">
                       Learn more
                       <svg
                         className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-200"
@@ -60,7 +60,7 @@ export default function Service({ data }) {
                           d="M9 5l7 7-7 7"
                         />
                       </svg>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

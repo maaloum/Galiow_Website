@@ -3,16 +3,14 @@
 /* eslint-disable import/extensions */
 /** @type {import('tailwindcss').Config} */
 
-import { fontFamily as _fontFamily } from "tailwindcss/defaultTheme";
-
-// const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // Enable dark mode with class strategy
   theme: {
     fontFamily: {
-      sans: ["Poppins", ..._fontFamily.sans],
+      sans: ["Poppins", ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
       xs: ".75rem",
@@ -52,6 +50,7 @@ module.exports = {
       },
       animation: {
         "bounce-x": "bouncex 1s infinite",
+        float: "float 3s ease-in-out infinite", // ✅ NEW
       },
       keyframes: {
         bouncex: {
@@ -64,13 +63,14 @@ module.exports = {
             animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
           },
         },
-      },
-      spacing: {
-        71: "17.75rem",
-        95: "23.5rem",
-        192: "48rem",
-        192.5: "49.5rem",
-        193: "51rem",
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0) scale(1)",
+          },
+          "50%": {
+            transform: "translateY(-10px) scale(1.1)",
+          },
+        }, // ✅ NEW
       },
     },
   },

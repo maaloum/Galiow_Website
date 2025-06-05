@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import Header from "parts/Header";
-import Footer from "parts/Footer";
+import Header from "../parts/Header";
+import Footer from "../parts/Footer";
+import PropTypes from "prop-types";
 
 const faqData = [
   {
     question: "What services do you offer?",
     answer:
-      "We offer a comprehensive range of services including Web Development, Mobile Development, UI/UX Design, Custom Software Development, Audit & IT Consulting Services, and Infrastructure & System Support. Each service is tailored to meet your specific business needs.",
+      "We specialize in cybersecurity solutions, IT consulting, and custom software development. Our services include network security, threat detection and response, vulnerability assessments, compliance support, and tailored software applications. ",
   },
   {
     question: "How long does it take to complete a project?",
@@ -80,6 +81,12 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => (
     </div>
   </div>
 );
+FAQItem.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -127,11 +134,12 @@ export default function FAQPage() {
             <Fade direction="up" delay={1000} triggerOnce>
               <div className="mt-16 text-center">
                 <p className="text-gray-600 mb-6">
-                  Still have questions? We're here to help!
+                  Still have questions? We&apos;re here to help!
                 </p>
+
                 <a
                   href="/discuss-project"
-                  className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                  className="inline-flex items-center px-6 py-3 text-base font-medium text-black bg-yellow-300 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Contact Us
                   <svg

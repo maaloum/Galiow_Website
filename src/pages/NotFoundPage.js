@@ -5,9 +5,9 @@
 
 import React, { Component } from 'react';
 
-import Button from 'elements/Button';
+import Button from '../../src/elements/Button';
 
-import NotFound from 'assets/images/NotFound.png';
+import NotFound from '../assets/images/NotFound.png';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class NotFoundPage extends Component {

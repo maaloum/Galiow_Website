@@ -7,9 +7,9 @@ import React from "react";
 
 import Fade from "react-awesome-reveal";
 
-import NotFound from "assets/images/NotFound.png";
+import NotFound from "../assets/images/NotFound.png";
 
-import Button from "elements/Button";
+import Button from "../../src/elements/Button";
 
 export default function PortfolioDetail({ data }) {
   console.log({ data });
@@ -45,7 +45,7 @@ export default function PortfolioDetail({ data }) {
 
   return (
     <section className="container mx-auto">
-      <Fade bottom>
+      {/* <Fade bottom>
         <Button
           type="link"
           href="/project"
@@ -67,10 +67,10 @@ export default function PortfolioDetail({ data }) {
           </svg>
           See All Project
         </Button>
-      </Fade>
+      </Fade> */}
 
       {data.map((item) => (
-        <div className="flex flex-col mt-8 justify-center">
+        <div key={item.id} className="flex flex-col mt-8 justify-center">
           <Fade bottom triggerOnce>
             <h1 className="text-5xl text-theme-blue text-center font-bold">
               {item.title}
